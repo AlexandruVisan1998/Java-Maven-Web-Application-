@@ -1,0 +1,6 @@
+com/example/prototip/PrototipApplication.class
+com/example/prototip/controller/WebSocketEventListener.class
+com/example/prototip/controller/ChatController.class
+com/example/prototip/model/ChatMessage.class
+com/example/prototip/config/WebSocketConfig.class
+com/example/prototip/model/ChatMessage$MessageType.class

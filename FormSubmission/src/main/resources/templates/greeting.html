@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+    body
+    {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #DCDCDC;
+    }
+
+    .box
+    {
+        width: 300px;
+        padding: 40px;
+        position: absolute;
+        height: center;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #333;
+        text-align: center;
+    }
+
+    .box h1
+    {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+
+    }
+
+    .box input[type = "text"],
+    {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        height: center;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 240px;
+        transition: 0.25s;
+    }
+
+    .box h1
+    {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        height: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 240px;
+        transition: 0.25s;
+    }
+
+    .box input[type = "text"]:focus
+    {
+        width; 280px;
+        border-color:  #2ecc71;
+    }
+
+    .box input[type = "text"]
+    {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 240px;
+            transition: 0.25s;
+            cursor: pointer;
+    }
+    .box button
+    {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 240px;
+            transition: 0.25s;
+            cursor: pointer;
+    }
+
+    button {
+        box-shadow: none;
+        border: 1px solid transparent;
+        font-size: 14px;
+        outline: none;
+        line-height: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 0.6rem 1rem;
+        border-radius: 2px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        min-height: 38px;
+    }
+
+    button.primary {
+        background-color: #128ff2;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+        color: #fff;
+    }
+
+    .submit-btn {
+    display: block;
+    margin-top: 15px;
+    min-width: 100px;
+}
+
+    .box h2
+    {
+        color: white;
+        text-transfprm: uppercase;
+        font-weight: 500;
+
+    }
+
+    ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #333;
+         }
+
+         li {
+           float: left;
+         }
+
+         li a {
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+         }
+
+         li a:hover {
+           background-color: #111;
+         }
+  </style>
+    <title>Formular facultate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<body>
+
+<ul>
+    <li>
+        <a href="http://localhost:8080">Back home</a>
+    </li>
+
+</ul>
+
+<div class="box">
+    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+
+        <p>
+        <h2>Nume:
+        </h2>
+            <input type="text" th:field="*{nume}" />
+        <h2>
+            Grupa:
+        </h2>
+
+        <input type="text" th:field="*{grupa}" />
+        <h2>
+            Motivul Cererii:
+        </h2>
+            <input type="text" th:field="*{motivulCererii}" />
+
+            <input type="submit" value="Submit" />
+
+            <input type="reset" value="Reset" />
+    </h2>
+        </p>
+
+    </form>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
